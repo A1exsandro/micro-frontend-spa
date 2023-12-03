@@ -9,12 +9,19 @@ registerApplication({
     activeWhen: (location) => location.pathname === "/",
 });
 
-// registerApplication({
-//   name: "@nst/react-first",
-//   app: () =>
-//     System.import("@nst/react-first"),
-//   activeWhen: (location) => location.pathname ==="/react-first",
-// });
+registerApplication({
+  name: "@nst/react-first",
+  app: () =>
+    System.import("@nst/react-first"),
+    activeWhen: (location) => location.pathname === "/react-first",
+});
+
+registerApplication({
+  name: "@nst/react-header",
+  app: () =>
+    System.import("@nst/react-header"),
+  activeWhen: ["/"],
+});
 
 registerApplication({
   name: "@nst/react-router",
