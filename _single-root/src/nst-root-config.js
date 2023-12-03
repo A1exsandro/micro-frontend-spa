@@ -9,18 +9,18 @@ registerApplication({
     activeWhen: (location) => location.pathname === "/",
 });
 
-registerApplication({
-  name: "@nst/react-first",
-  app: () =>
-    System.import("@nst/react-first"),
-  activeWhen: (location) => location.pathname ==="/react-first",
-});
+// registerApplication({
+//   name: "@nst/react-first",
+//   app: () =>
+//     System.import("@nst/react-first"),
+//   activeWhen: (location) => location.pathname ==="/react-first",
+// });
 
 registerApplication({
-  name: "@nst/react-multiples",
+  name: "@nst/react-router",
   app: () =>
-    System.import("@nst/react-multiples"),
-  activeWhen: (location) => location.pathname ==="/react-multiples",
+    System.import("@nst/react-router"),
+  activeWhen: ["/react-router"]
 });
 
 start({
