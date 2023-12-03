@@ -16,6 +16,13 @@ registerApplication({
   activeWhen: (location) => location.pathname ==="/react-first",
 });
 
+registerApplication({
+  name: "@nst/react-multiples",
+  app: () =>
+    System.import("@nst/react-multiples"),
+  activeWhen: (location) => location.pathname ==="/react-multiples",
+});
+
 start({
   urlRerouteOnly: true,
 });
